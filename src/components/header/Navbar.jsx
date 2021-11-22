@@ -5,7 +5,6 @@ import {
   addIcon,
   exploreActiveIcon,
   exploreIcon,
-  heartIcon,
   homeActiveIcon,
   homeIcon,
   personalIcon,

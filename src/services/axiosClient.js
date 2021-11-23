@@ -4,7 +4,10 @@ const axiosClient = axios.create({
   baseURL: process.env.REACT_APP_ROOT_API,
   header: {
     "content-type": "application/json",
+    Accept: "application/json",
   },
+  mode: "cors",
+  credentials: "include",
   withCredentials: true,
 })
 

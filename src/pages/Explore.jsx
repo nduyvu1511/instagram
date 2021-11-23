@@ -34,7 +34,7 @@ const Explore = () => {
     <>
       {loggedUser && Object.keys(loggedUser).length > 0 && (
         <>
-          <section className="layout py-0 md:py-8 px-0 md:px-6 lg:px-0 auto-rows-min mt-54 mb-10">
+          <section className="layout py-0 md:py-8 px-0 md:px-6 lg:px-0 auto-rows-min mt-54 mb-11 md:mb-0">
             <div className="flex items-center justify-center md:hidden fixed top-0 left-0 right-0 h-54 px-4 bg-white z-999">
               <input
                 onFocus={() => history.push("/explore/search")}

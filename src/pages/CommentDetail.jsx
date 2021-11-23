@@ -18,7 +18,7 @@ const CommentDetail = () => {
   }, [postId, dispatch])
 
   return (
-    <section className="layout mt-11 md:mt-54">
+    <section className="layout mt-11 md:mt-54 mb-11 md:mb-0">
       <NavMobile title="Bình luận" />
       <div className="px-4 py-2 border top-10 flex items-center w-full fixed left-0 right-0 bg-bgGray border-b border-borderColor">
         <img

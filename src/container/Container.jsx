@@ -5,6 +5,8 @@ import routes from "../routes/routes"
 import { useEffect } from "react"
 import { fetchLoggedUser } from "../features/userSlice"
 import Header from "./../components/header/Header"
+import { Switch } from "react-router"
+import Footer from "./../components/footer/Footer"
 
 const Container = () => {
   const dispatch = useDispatch()
@@ -17,14 +19,17 @@ const Container = () => {
   return (
     <>
       <Header loggedUser={loggedUser} />
-      {routes.map((route) => (
-        <PrivateRoute
-          key={route.id}
-          path={route.path}
-          exact
-          component={route.component}
-        />
-      ))}
+      <Switch>
+        {routes.map((route) => (
+          <PrivateRoute
+            exact
+            key={route.id}
+            path={route.path}
+            component={route.component}
+          />
+        ))}
+      </Switch>
+      {/* <Footer /> */}
     </>
   )
 }

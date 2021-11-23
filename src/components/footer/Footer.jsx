@@ -17,7 +17,7 @@ const datas = [
 
 const Footer = () => {
   return (
-    <footer className="bg-white mb-11 md:mb-0 mt-11 md:mt-0">
+    <footer className="bg-white mt-4 md:mt-0 mb-11 md:mb-0">
       <div className="layout py-2">
         <div className="max-w-350 mx-auto">
           <ul className="text-center">

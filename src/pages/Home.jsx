@@ -13,7 +13,6 @@ import PostLoader from "../components/loader/PostLoader"
 import { BsInstagram } from "react-icons/bs"
 
 const Home = () => {
-  
   const { data: posts, isLoading } = useSelector((state) => state.post.posts)
 
   const { data: loggedUser, isLoading: userLoading } = useSelector(
@@ -62,7 +61,7 @@ const Home = () => {
       ) : (
         loggedUser &&
         Object.keys(loggedUser).length > 0 && (
-          <section className="layout px-0 mt-54 md:py-8">
+          <section className="layout px-0 mt-54 md:py-8 mb-11 md:mb-0">
             {Object.keys(loggedUser).length > 0 && (
               <section className="grid grid-cols-3 gap-6">
                 <section className="col-span-3 ins:col-span-2 mx-auto">

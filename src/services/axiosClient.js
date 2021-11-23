@@ -6,8 +6,6 @@ const axiosClient = axios.create({
     "content-type": "application/json",
     Accept: "application/json",
   },
-  mode: "cors",
-  credentials: "include",
   withCredentials: true,
 })
 

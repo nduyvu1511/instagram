@@ -6,6 +6,7 @@ import PostDetail from "../pages/PostDetail"
 import CommentDetail from "../pages/CommentDetail"
 import EditAccount from "../pages/EditAccount"
 import Explore from "../pages/Explore"
+import NotFound from "./../pages/NotFound"
 
 const routes = [
   { id: 1, path: "/", component: Home },
@@ -16,7 +17,7 @@ const routes = [
   { id: 6, path: "/post/:postId", component: PostDetail },
   { id: 7, path: "/accounts/edit", component: EditAccount },
   { id: 8, path: "/explore", component: Explore },
-  // { id: 9, path: "*", component: NotFound },
+  { id: 9, path: "*", component: NotFound },
 ]
 
 export default routes

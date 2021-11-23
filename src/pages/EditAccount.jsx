@@ -8,7 +8,7 @@ const EditAccount = () => {
   const [tab, setTab] = useState(false)
 
   return (
-    <section className="mt-54 layout py-8">
+    <section className="mt-54 layout py-8 mb-11 md:mb-0">
       <NavMobile title="Chỉnh sửa trang cá nhân" />
       <section className="grid grid-cols-6 md:border border-borderColor">
         <div className="col-span-6 md:col-span-2 md:border-r border-borderColor">

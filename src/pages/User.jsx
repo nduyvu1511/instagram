@@ -89,7 +89,7 @@ const UserPage = () => {
       <section className="py-4 md:py-10 md:border-b border-borderColor px-5 md:px-0">
         {user && Object.keys(user).length > 0 && (
           <div className="flex">
-            <div className="md:w-4/12">
+            <div className="w-28 md:w-4/12">
               <input
                 type="file"
                 id="fileButton"
@@ -98,7 +98,7 @@ const UserPage = () => {
                 onChange={(e) => setAvatarName(e.target.files[0])}
               />
               {loggedUser?._id !== user._id ? (
-                <div className=" w-20 md:w-auto">
+                <div className="w-20 md:w-auto">
                   <img
                     className="w-20 h-20 md:w-150 md:h-150 object-cover rounded-full md:mx-auto"
                     src={user.avatar}
@@ -121,7 +121,7 @@ const UserPage = () => {
               ) : (
                 <label htmlFor="fileButton" className="cursor-pointer">
                   <img
-                    className="w-150 h-150 object-cover rounded-full mx-auto"
+                    className="w-20 h-20 md:w-150 md:h-150 object-cover rounded-full mx-auto"
                     src={loggedUser.avatar}
                     alt=""
                   />

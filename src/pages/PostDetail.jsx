@@ -28,7 +28,7 @@ const PostDetailPage = () => {
     dispatch(fetchPostDetail(postId))
   }, [dispatch, postId])
   return (
-    <section className="mt-11 md:mt-54 layout py-0 pb-10 md:py-8 px-0">
+    <section className="mt-11 md:mt-54 layout py-0 pb-10 md:py-8 px-0 mb-11 md:mb-0">
       <NavMobile title="Ảnh" />
       {isLoading ? (
         <div className="flex">

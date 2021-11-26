@@ -6,7 +6,6 @@ import { useEffect } from "react"
 import { fetchLoggedUser } from "../features/userSlice"
 import Header from "./../components/header/Header"
 import { Switch } from "react-router"
-import Footer from "./../components/footer/Footer"
 
 const Container = () => {
   const dispatch = useDispatch()
